@@ -16,7 +16,7 @@ btnNew.onclick=()=>
 {
     btnNew.classList.add("loading");
     btnNew.innerText = "Loading Quote...";
-    var url="http://api.quotable.io/random";
+    var url="https://api.quotable.io/random";
     fetch(url).then((response)=>response.json()).then((data)=>
     {
         quotearea.innerText=data.content;
